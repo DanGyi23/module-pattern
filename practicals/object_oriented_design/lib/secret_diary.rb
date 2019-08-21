@@ -22,10 +22,6 @@ class SecretDiary
     end
   end
 
-end
-
-class WriteRead
-
   def add_entries
     if $unlocked == true
       p "Please write your entry"
@@ -51,6 +47,5 @@ class WriteRead
       "Diary locked!"
     end
   end
-
 
 end
