@@ -22,12 +22,16 @@ class SecretDiary
     end
   end
 
+end
+
+class WriteRead
+
   def add_entries
     if $unlocked == true
       p "Please write your entry"
       input = gets.chomp
       file = File.open('diary.csv', "w")
-      csv_line = input + ","
+      csv_line = input + "/n"
       file.puts csv_line
       "Entry saved!"
     else
