@@ -1,4 +1,4 @@
-class SecretDiary
+class LockUnlock
 
   def lock
     p "Enter Password:"
@@ -21,6 +21,10 @@ class SecretDiary
       "Error, incorrect password"
     end
   end
+
+end
+
+class DiaryEdit
 
   def add_entries
     if $unlocked == true
