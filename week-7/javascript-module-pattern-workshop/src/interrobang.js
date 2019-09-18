@@ -1,8 +1,8 @@
 "use strict";
 
 (function(exports) {
-  function interrobang(exclaim, question, string) {
-    return exclaim(question(string));
+  function interrobang(exclaim, question, smiley, string) {
+    return exclaim(question(smiley((string))));
   };
 
   exports.interrobang = interrobang;
